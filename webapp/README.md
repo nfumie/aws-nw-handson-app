@@ -5,11 +5,11 @@
 ```
 git clone xxxxxxx
 cd webapp/frontend
-echo BACKEND_URL=http://ご自身の環境のバックエンドサーバーのIPに書き換えてください:3001 >> .env
+echo BACKEND_URL=http://ご自身の環境のバックエンドサーバーのIPに書き換えてください:80 >> .env
 cat .env
 
 npm install
-npm start
+sudo $(which node) app.js
 ```
 
 ### backend
@@ -17,7 +17,7 @@ npm start
 git clone xxxxxxx
 cd webapp/backend
 npm install
-npm start
+sudo $(which node) app.js
 ```
 
 ## ファイル構成
